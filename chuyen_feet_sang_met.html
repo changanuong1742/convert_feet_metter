@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+
+
+<input id="nhap_so" placeholder="Nhập Số"/>
+<p id="demo"></p>
+<button onclick="convertFeetToMeters(document.getElementById('nhap_so').value);">Feet Sang Meter</button>
+<button onclick="convertMetersToFeet(document.getElementById('nhap_so').value);">Meter Sang Feet</button>
+
+
+<script>
+
+
+    function convertFeetToMeters(feet) {
+
+        if (feet < (0)) {
+            document.getElementById('demo').innerHTML = 'Nhập Lại';
+        } else {
+            document.getElementById('demo').innerHTML = "" + feet * 0.3048;
+        }
+
+    }
+
+    function convertMetersToFeet(meter) {
+
+        if (meter < (0)) {
+            document.getElementById('demo').innerHTML = 'Nhập Lại';
+        } else {
+            document.getElementById('demo').innerHTML = "" + meter * 3.2808;
+        }
+
+    }
+
+</script>
+
+
+</body>
+</html>
